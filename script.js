@@ -7,12 +7,18 @@ function greet(name)
 }
 
 function callAPI(){
-    const todo1 = fetch('https://jsonplaceholder.typicode.com/todos/1')
+    fetch('https://jsonplaceholder.typicode.com/todos/2')
       .then(response => response.json())
-      .then(json => console.log(json));
+      .then(json => {
+        console.log(json);
+        document.querySelector("#todo1_id").innerHTML = json.id;
+        document.querySelector("#todo1_title").innerHTML = json.title;
+        document.querySelector("#todo1_completed").innerHTML = json.completed;
+      });
 }
 
 greet("Clyde"); //Hello Clyde
+callAPI();
 
 /*
 function greet(name)
