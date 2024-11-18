@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    margin-top: 30px;
+    color: #ff6f61;
+  }
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #e05c4a;
+  }
+  #meal-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .meal-info, .ingredients, .instructions {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  .ingredients ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .ingredients li {
+    padding: 5px 0;
+  }
+  .instructions {
+    text-align: left;
+    padding: 0 20px;
+    font-size: 1.1em;
+  }
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  @media (max-width: 768px) {
+    #meal-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
